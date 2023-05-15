@@ -1,0 +1,87 @@
+Anti-money laundering (AML) refers to a set of laws, regulations, and procedures designed to prevent the illicit generation, movement, and use of funds obtained through illegal activities. Money laundering involves disguising the origins of illegal funds, making them appear legitimate and clean. The goal of AML measures is to detect and deter money laundering activities, as well as to identify and report suspicious financial transactions.
+
+The process of money laundering typically involves three stages: placement, layering, and integration. During the placement stage, illicit funds are introduced into the financial system, often through activities such as smuggling, bribery, or drug trafficking. In the layering stage, the money is moved through various transactions and accounts to obscure its source and ownership. Lastly, in the integration stage, the laundered funds are reintroduced into the legitimate economy, making them appear as legitimate income or investments.
+
+Governments, financial institutions, and other organizations implement AML measures to combat money laundering and related crimes. These measures include customer due diligence (CDD), which involves verifying the identity of customers and assessing the risks associated with their transactions. Enhanced due diligence (EDD) may be required for higher-risk customers or complex transactions.
+
+Financial institutions are required to establish and maintain AML programs that include policies, procedures, and internal controls to prevent money laundering. They are also obligated to report suspicious transactions to the appropriate authorities, such as financial intelligence units (FIUs), who analyze the reports and take action if necessary.
+
+Failure to comply with AML regulations can lead to severe legal and financial consequences for individuals and organizations involved. Penalties may include fines, asset seizures, loss of licenses, and reputational damage. The aim of AML measures is to protect the integrity of the financial system, deter criminal activities, and contribute to the overall fight against organized crime and terrorism financing.
+
+SUSPICIOUS  FINANCIAL TRANSACTION 
+In financial regulation, a Suspicious Activity Report (SAR) or Suspicious Transaction Report (STR) is a report made by a financial institution about suspicious or potentially suspicious activity as required under laws designed to counter money laundering, financing of terrorism and other financial crimes.
+
+
+
+
+
+Related
+Is online banking fraud detected in India?
+The bank will not know it on its own. Whenever an online transaction is carried by a customer, bank sends an sms to the customer with details. The customer can disown it by sending a reply if the transaction was not done by him. But, credit card companies are one step ahead in calling the customer to confirm the genuineness of a high value transaction put through by him.
+
+So no bank can detect an online fraud and it will seek reporting back from the customer by sending the sms.
+
+
+Benford’s law states that leading digits in a collection of data set are probably going to be small.
+
+
+
+Benford's Law, also known as the First-Digit Law, is an observation about the distribution of leading digits in many sets of numerical data. It states that in many naturally occurring datasets, the frequency of the first digit follows a specific pattern. According to Benford's Law, the digit 1 appears as the leading digit about 30.1% of the time, while larger digits appear less frequently, with decreasing probabilities.
+
+The distribution of leading digits in a dataset adhering to Benford's Law is as follows:
+
+Digit 1: 30.1%
+Digit 2: 17.6%
+Digit 3: 12.5%
+Digit 4: 9.7%
+Digit 5: 7.9%
+Digit 6: 6.7%
+Digit 7: 5.8%
+Digit 8: 5.1%
+Digit 9: 4.6%
+Benford's Law is applicable to various types of numerical data, such as populations of cities, physical constants, mathematical tables, and financial data. It has found particular use in fraud detection because fraudulent numbers often deviate from the expected distribution predicted by Benford's Law.
+
+In the context of banking and fraud detection, Benford's Law can be applied to transactional data to identify potential anomalies. When analyzing financial transactions, one can examine the leading digits of the transaction amounts and compare their distribution to the expected distribution based on Benford's Law. If a dataset significantly deviates from the expected distribution, it may indicate the presence of fraudulent or manipulated transactions.
+
+The idea behind using Benford's Law for fraud detection is that people attempting to manipulate data often fail to recreate a natural distribution, and their fabricated numbers may exhibit a different pattern of leading digits. By applying statistical tests, such as the chi-square test or the Z-test, deviations from Benford's Law can be quantified and used to flag suspicious transactions for further investigation.
+
+It is important to note that while Benford's Law is a useful tool for fraud detection, it is not foolproof, and its application should be combined with other techniques and domain-specific knowledge to effectively detect and prevent fraudulent activities in banking transactions.
+
+
+HOW DOES A MACHINE LEARNING SYSTEM WORK FOR FRAUD DETECTION ON BANK TRANSACTION
+A Machine Learning (ML) system for fraud detection in bank transactions works by utilizing historical transaction data to learn patterns and identify anomalies that may indicate fraudulent activity. Here is a high-level overview of the process:
+
+1. Data Co99llection and Preprocessing:
+   - Gather transaction data from various sources, including transaction records, customer information, and other relevant data.
+   - Clean and preprocess the data by removing inconsistencies, handling missing values, and transforming it into a suitable format for ML algorithms.
+
+2. Feature Extraction:
+   - Extract meaningful features from the transaction data that can help in distinguishing between legitimate and fraudulent transactions.
+   - Examples of features include transaction amount, time of day, transaction frequency, location, IP address, device information, and historical behavior patterns.
+
+3. Training Data Preparation:
+   - Divide the dataset into training and testing sets.
+   - Annotate or label the training data, indicating whether each transaction is legitimate or fraudulent.
+
+4. ML Model Training:
+   - Select an appropriate ML algorithm for fraud detection, such as supervised learning algorithms (e.g., logistic regression, decision trees, random forests, or neural networks).
+   - Feed the labeled training data into the ML model to train it to recognize patterns and make predictions.
+
+5. Model Validation and Evaluation:
+   - Use the testing set to evaluate the performance of the trained model.
+   - Metrics such as accuracy, precision, recall, and F1 score are calculated to assess the model's effectiveness in detecting fraud.
+
+6. Real-time Transaction Monitoring:
+   - Implement the trained ML model into a system that can analyze incoming transactions in real-time.
+   - Each new transaction is evaluated by the ML model to determine the likelihood of it being fraudulent.
+
+7. Risk Scoring and Decision Making:
+   - Assign a risk score to each transaction based on the ML model's predictions.
+   - Set a threshold to classify transactions as legitimate or potentially fraudulent based on the risk score.
+   - High-risk transactions may trigger alerts for further investigation by fraud analysts.
+
+8. Model Iteration and Improvement:
+   - Continuously monitor the performance of the ML model and collect feedback on misclassified transactions.
+   - Periodically retrain and update the model to adapt to new fraud patterns and improve accuracy.
+
+It's important to note that the effectiveness of an ML system for fraud detection depends on the quality and relevance of the training data, the selection and tuning of the ML algorithm, and the continuous monitoring and refinement of the system based on evolving fraud patterns.
